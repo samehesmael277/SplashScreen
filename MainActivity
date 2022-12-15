@@ -1,0 +1,4 @@
+        var keepSplashOnScreen = true
+        val delay = 2000L
+        installSplashScreen().setKeepOnScreenCondition { keepSplashOnScreen }
+        Handler(Looper.getMainLooper()).postDelayed({ keepSplashOnScreen = false }, delay)
